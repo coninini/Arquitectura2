@@ -1,0 +1,105 @@
+{% load bootstrap5 %} {% bootstrap_css%} {% bootstrap_javascript%} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='{%static "css/style.css"%}'>
+    <script src='{% static "js/main.js"%}'></script>
+    <title>Cambio Aceite</title>
+
+    <style>
+        .navbar1 {
+            background-color: #417D81;
+        }
+
+        .container-btn-reserva {
+            display: flex;
+            justify-content: center;
+            margin-top: px;
+            /* Ajusta el valor según tu preferencia */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar1"> <!-- Navbar... -->
+            <div class="container-fluid col-sm-2 " style="height:40px;">
+                <a class="navbar-brand" href="{%url 'contacto'%}"
+                    style="font-size: 17px; justify-content: center;">Información de
+                    contacto</a>
+            </div>
+        </nav>
+        <nav class="navbar2 navbar-expand " style="height:60px;">
+            <a class="navbar-brand" href="{%url 'index'%}">
+                <img src="{%static 'img/logo.png'%}" alt="Logo" width="80px" height="60px" style="margin-left: 20px;"
+                    class="d-inline-block align-content-sm-end">
+            </a>
+            <div class="container-fluid col-5" style="justify-content: space-evenly;">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav " style="margin-top: -40px; padding-bottom: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'index'%}">Inicio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="{%url 'servicios'%}">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'reserva'%}">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'contacto'%}">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'cuenta'%}">Cuenta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card " style="width: 500px; height: 540px; margin-left: 400px; margin-top: 20px;">
+            <img src="{% static 'img/Frenos.jpg' %}" class="card-img-top" alt="..."
+                style="width: 300px;height: 300px;margin-left:90px; margin-top: 20px;">
+            <div class="card-body" style="color: white;">
+                <h5 class="card-title">Revisión de frenos</h5>
+                <p class="card-text"> Los sistemas de frenado representan uno de los componentes de seguridad más
+                    esenciales y cruciales de su automóvil. Es fundamental llevar a cabo revisiones y mantenimientos
+                    regulares de los frenos de su vehículo para prevenir posibles inconvenientes que puedan comprometer
+                    la seguridad de su automóvil, de los ocupantes y del entorno circundante.
+                </p>
+            </div>
+        </div>
+            <a href="{%url 'reserva'%}">
+                <input class="btn btn-primary" type="submit" value="Reservar"
+                style="background-color:#417D81; width: 180px;height: 50px; margin-top: 30px; margin-left: 570px;">
+            </a>
+
+        </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

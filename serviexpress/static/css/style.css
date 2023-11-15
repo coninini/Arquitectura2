@@ -1,0 +1,110 @@
+/*navbar general*/
+.navbar1{
+    background-color:#417D81;
+}
+.container-fluid col-5{
+    background-color: black;
+}
+.nav-item{
+    margin: 170px;
+    margin-top: -2px;
+    margin-left: -80px;
+}
+
+/*Index*/
+.carousel-item{
+    height: 480px;
+}
+
+.card-img-top{
+    width: 70px;
+    height: 70px;
+    margin-top: 17px;
+    margin-left: 16px;
+}
+.card-img-top2{
+    width: 70px;
+    height: 70px;
+   margin-top: -140px;
+    margin-left: 530px;
+}
+.card-body2{
+    margin-left: 505px;
+    margin-top: -45px;
+}
+.card-img-top3{
+    width: 70px;
+    height: 70px;
+   margin-top: -140px;
+    margin-left: 1000px;
+}
+.card-body3{
+    margin-left:960px;
+    margin-top: -46px;
+}
+
+/* Servicios*/
+.card{ 
+    background-color: #417D81;
+}
+#card1{
+    width: 260px; 
+    height:260px;
+}
+
+#card2{
+    width: 260px; 
+    height:260px;
+    margin-left: 430px; 
+    margin-top: -260px;
+}
+#card3{
+    width: 260px; 
+    height:260px;
+    margin-left: 850px; 
+    margin-top: -260px;
+}
+#card4{
+    width: 260px; 
+    height:260px;
+    margin-top: 50px;
+}
+#card5{
+    width: 260px; 
+    height:260px;
+    margin-left: 430px;
+    margin-top: -260px;
+}
+#card6{
+    width: 260px; 
+    height:260px;
+    margin-left: 850px;
+    margin-top: -260px;
+}
+/* Reserva*/
+#card7{
+    width: 600px;
+    height: 600px;
+    margin-left: 334px;
+    border-radius: 20px;
+}
+
+/*Cuenta*/
+
+#card8{
+    width: 600px;
+    height: 600px;
+    margin-left: 334px;
+    border-radius: 20px;
+}
+
+/*registro cli*/
+
+#card9{
+    width: 800px;
+    height: 610px;
+    margin-left: 240px;
+    border-radius: 20px;
+}
+
+/*Servicios*/
