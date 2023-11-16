@@ -1,0 +1,189 @@
+{% load bootstrap5 %} {% bootstrap_css%} {% bootstrap_javascript%} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='{%static "css/style.css"%}'>
+    <script src='{% static "js/main.js"%}'></script>
+    <title>Cambio Aceite</title>
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    }
+
+    .navbar1 {
+    background-color: #417D81;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    }
+
+    .navbar2 {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 90px;
+    }
+
+    .navbar-brand img {
+    width: 80px;
+    height: 60px;
+    }
+
+    .navbar-toggler {
+    background-color: #fff;
+    }
+
+    .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .nav-item {
+    margin: 0 15px;
+    }
+
+    .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    }
+
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    }
+
+    .collapse.navbar-collapse {
+    justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+    }
+
+    .center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin-right: 345px;
+    }
+    .center-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 550px;
+            margin-left: 310px;
+        }
+
+        .center-card {
+            width: 500px;
+            height: 500px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn-reservar {
+            background-color: #417D81;
+            width: 180px;
+            height: 50px;
+            margin-top: 30px;
+            margin-right: 340px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar1">
+            <div class="container-fluid col-sm-2 " style="height:40px;">
+                <center><a class="navbar-brand" href="{%url 'contacto'%}"
+                        style="font-size: 17px; justify-content: center;">Información de contacto</a></center>
+            </div>
+        </nav>
+        <nav class="navbar2 navbar-expand ">
+            <a class="navbar-brand" href="{%url 'index'%}">
+                <img src="{%static 'img/logo.png'%}" alt="Logo" class="d-inline-block align-content-sm-end">
+            </a>
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'index'%}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'servicios'%}">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'reserva'%}">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'contacto'%}">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{%url 'cuenta'%}">Cuenta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+            <main class="center-main">
+                <div class="card center-card">
+                    <img src="" class="card-img-top" alt="..."
+                        style="width: 300px;height: 300px; margin-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #fff;"></h5>
+                        <p class="card-text" style="color: #fff;"></p>
+                    </div>
+                </div>
+                <a href="{%url 'reserva'%}">
+                    <input class="btn btn-primary btn-reservar" type="submit" value="Reservar">
+                </a>
+            </main>
+    </main>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
