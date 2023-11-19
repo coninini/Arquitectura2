@@ -49,85 +49,116 @@
 
     <style>
         body {
-    margin: 0;
-    padding: 0;
-    }
+            margin: 0;
+            padding: 0;
+        }
 
-    .navbar1 {
-    background-color: #417D81;
-    color: #000000;
-    padding: 10px;
-    text-align: center;
-    }
+        .navbar1 {
+            background-color: #417D81;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
 
-    .navbar2 {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 90px;
-    }
+        .navbar2 {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 90px;
+        }
 
-    .navbar-brand img {
-    width: 80px;
-    height: 60px;
-    }
+        .navbar-brand img {
+            width: 80px;
+            height: 60px;
+        }
 
-    .navbar-toggler {
-    background-color: #fff;
-    }
+        .navbar-toggler {
+            background-color: #fff;
+        }
 
-    .navbar-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+        .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .nav-item {
-    margin: 0 15px;
-    }
+        .nav-item {
+            margin: 0 15px;
+        }
 
-    .nav-link {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    }
+        .nav-link {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
 
-    .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    }
-
-    .collapse.navbar-collapse {
-    justify-content: space-evenly;
-    }
-
-    @media screen and (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column;
+        .container {
+        display: flex;
+        justify-content: center;
         align-items: center;
-    }
+        height: 60px;
+        }   
 
-    .nav-item {
-        margin: 10px 0;
-    }
-    }
+        .collapse.navbar-collapse {
+            justify-content: space-evenly;
+        }
 
-    .center-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    margin-right: 345px;
-    }
+        @media screen and (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
 
+            .nav-item {
+                margin: 10px 0;
+            }
+        }
+
+        .center-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin-left: 50px;
+        }
+
+        .card-container {
+            width: 400px;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .center-form {
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .form-control {
+            width: 100%;
+        }
+
+        .form-select {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .form-floating {
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #47BDFF;
+            width: 100%;
+            margin-top: 20px;
+        }
     </style>
 
 </head>
@@ -176,48 +207,44 @@
     </header>
 
     <main class="center-card">
-        <form onsubmit="return validateForm()" method="post">
-            <div id="card7" class="card" style="width: 400px; border-radius: 10px; padding: 20px;">
-                <div class="card" style="background-color: white; height: 50px; text-align: center; font-size: 24px; border-radius: 10px; margin-bottom: 20px;">
-                    Reserva
-                </div>
-                <div class="center-form">
-                    <div class="columna" style="border-radius: 10px; position: relative;">
-                        <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="Ingrese Patente">
-                        <span id="patenteConfirmation" style="color: green; position: absolute; right: 5px; top: 10px; display: none;">&#10004;</span>
-                        <small id="patenteError" style="color: red; display: none;">La patente debe tener el formato correcto: dos letras, tres números y dos letras (ej. AA123BB).</small>
-                    </div>
-
-                    <select class="form-select" aria-label="Default select example" id="selectServicio" style="width: 100%; margin-top: 20px;">
-                        <option value="" selected>Seleccione servicio</option>
-                        <option value="1">Cambio Aceite</option>
-                        <option value="2">Revisión Frenos</option>
-                        <option value="3">Revisión Neumáticos</option>
-                        <option value="4">Cambio Bujias</option>
-                        <option value="5">Revisión Luces</option>
-                        <option value="6">Revisión Amortiguadores</option>
-
-                    </select>
-                    <small id="patenteError" style="color: red; display: none;">La patente debe contener el formato correcto: dos letras, tres números y dos letras (ej AA123BB).</small>
-                    <small id="servicioError" style="color: red; display: none;">Debe seleccionar un servicio</small>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; width: 100%; margin-top: 20px;"></textarea>
-                        <label for="floatingTextarea2" style="margin-top: 20px;">Comentarios</label>
-                    </div>
-                    <a href="{%url 'confirmacion_res'%}">
-                        <input class="btn btn-primary" type="submit" value="Enviar" style="background-color:#47BDFF; width: 100%; margin-top: 20px;">
-                    </a>
-                </div>
-            </div>
-        </form>
-    </main>
+        <div class="container">
+            <div class="d-flex justify-content-center" style="margin-right: 72px;">
+                <form onsubmit="return validateForm()" class="p-4" style="background-color: #417D81; border-radius: 10px; width: 600px; height: 600px;">
+                        <div class="card" style="background-color: white; height: 50px; text-align: center; font-size: 24px; border-radius: 10px; margin-bottom: 20px;">
+                            Reserva
+                        </div>
+                        <div class="center-form">
+                            <div class="columna">
+                                <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="Ingrese Patente">
+                                <span id="patenteConfirmation" style="color: green; position: absolute; right: 5px; top: 10px; display: none;">&#10004;</span>
+                                <small id="patenteError" style="color: red; display: none;">La patente debe tener el formato correcto: dos letras, tres números y dos letras (ej. AA123BB).</small>
+                            </div>
         
-    
-    
+                            <select class="form-select" aria-label="Default select example" id="selectServicio">
+                                <option value="" selected>Seleccione servicio</option>
+                                <option value="1">Cambio Aceite</option>
+                                <option value="2">Revisión Frenos</option>
+                                <option value="3">Revisión Neumáticos</option>
+                                <option value="4">Cambio Bujias</option>
+                                <option value="5">Revisión Luces</option>
+                                <option value="6">Revisión Amortiguadores</option>
+                            </select>
+                            <small id="patenteError" style="color: red; display: none;">La patente debe contener el formato correcto: dos letras, tres números y dos letras (ej AA123BB).</small>
+                            <small id="servicioError" style="color: red; display: none;">Debe seleccionar un servicio</small>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; width: 100%; margin-top: 20px;"></textarea>
+                                <label for="floatingTextarea2" style="margin-top: 20px;">Comentarios</label>
+                            </div>
+                            <a href="{%url 'confirmacion_res'%}">
+                                <input class="btn btn-primary" type="submit" value="Enviar">
+                            </a>
+                        </div>
+                </form>
+            </div>
 
-    
-    
+        </div>
 
+    </main>
 </body>
 
 </html>

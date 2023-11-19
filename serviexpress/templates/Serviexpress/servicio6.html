@@ -10,7 +10,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='{%static "css/style.css"%}'>
     <script src='{% static "js/main.js"%}'></script>
-    <title>Cambio Aceite</title>
+    <title>Revisión de Amortiguadores</title>
 
     <style>
         body {
@@ -164,11 +164,13 @@
     </header>
     <main class="center-main">
         <div class="card center-card">
-            <img src="" class="card-img-top" alt="..."
+            <img src="{% static 'img/OIP (3).jpeg' %}" class="card-img-top" alt="..."
                 style="width: 300px;height: 300px; margin-top: 20px;">
             <div class="card-body">
-                <h5 class="card-title" style="color: #fff;"></h5>
-                <p class="card-text" style="color: #fff;"></p>
+                <h5 class="card-title" style="color: #fff;">Revisión de Amortiguadores</h5>
+                <p class="card-text" style="color: #fff;">Los amortiguadores son componentes cruciales del sistema de suspensión de un vehículo y 
+                    desempeñan un papel fundamental en la comodidad del viaje, el manejo seguro y la estabilidad del automóvil. Una revisión periódica de 
+                    los amortiguadores es esencial para garantizar un rendimiento óptimo y mantener la seguridad en la carretera.</p>
             </div>
         </div>
         <a href="{%url 'reserva'%}">
